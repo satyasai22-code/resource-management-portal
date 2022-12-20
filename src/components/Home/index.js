@@ -3,7 +3,7 @@ import Header from '../Header'
 
 const Home = () => {
     return (
-      <Header/>
+      <Header isButtonRequired={true}/>
     )
 }
 

@@ -1,0 +1,15 @@
+.error-message {
+    font-size: 12px;
+    padding: 3px;
+    color: #ff0b37;
+    font-weight: 500;
+    display: none;
+  }
+
+  input:invalid[focused="true"] ~ .error-message {
+    display: block;
+  }
+
+  textarea:invalid[focused="true"] ~ .error-message {
+    display: block;
+  }

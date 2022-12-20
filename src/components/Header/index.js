@@ -5,6 +5,7 @@ import React from "react";
 import "./index.css";
 
 const Header = (props) => {
+   const { isButtonRequired } = props 
   return (
     <div className="nav-header">
       <div className="nav-content">
@@ -17,11 +18,12 @@ const Header = (props) => {
             />
           </Link>
           <div className="button-logo-container">
-             <Link to="/resource/add">
+            { isButtonRequired &&              
+            <Link to="/resource/add">
                 <button type="button" className="add-item-btn">
                   ADD ITEM
                 </button>
-              </Link>
+            </Link>}
             <Link to="/login">
                 <img
                     className="profile-logo"
