@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { Component , useState} from "react";
 import Header from "../Header";
-// import { FiChevronLeft } from "react-icons/fi";
+import { FaAngleLeft } from "react-icons/fa";
 import addItem from "../../images/add_item.png"
 import { ToastContainer, } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -81,7 +81,8 @@ const AddResourceItem = () => {
                 className="back-to_users-link"
               >
                 <button className="back-arrow-btn" type="button">
-                  {`< Users`}
+                  <FaAngleLeft className="arrow-icon" />
+                  Users
                 </button>
               </Link>
             </div>
