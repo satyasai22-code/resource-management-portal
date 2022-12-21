@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Header'
 import { homeTabsInfo, fetchStatus } from '../../constants/home_tabs_info'
 import { RESOURCE_GET_URL } from '../../constants/api_url'
 import HomeTabs from '../HomeTabs'
 import SearchInput from '../SearchInput'
+import ResourceList from '../ResourceList'
+import './index.css'
 
 const {initial, success, failure, inProgress} = fetchStatus
 
@@ -40,10 +42,9 @@ const Home = () => {
     })
     .catch(() => {})
   };
-
-  const onChangeSearchInput = (event) => {
-    setSearchInput(event.target.value );
-  };
+  useEffect(() => {
+    getResources()
+  }, []);
 
   const onEnterSearchInput = (event) => {
     if (event.key === "Enter") {
@@ -51,18 +52,20 @@ const Home = () => {
     }
   };
   const onClickSearchBtn = (event) => {
-    getResources();
+    setSearchInput(event.target.value );
+  }
+  const onChangeSearchInput = (event) => {
+    setSearchInput(event.target.value );
   }
   const clickTabItem = (tabId) =>{
     setCurrentTabId(tabId)
     getResources()
   }
     return (
-      <>
-      <Header isButtonRequired={true} />
-      <HomeTabs currentTabId={currentTabId} clickTabItem={clickTabItem}/>
-      <SearchInput searchInput={searchInput} onClickSearchBtn={onClickSearchBtn} onChangeSearchInput={onChangeSearchInput} onEnterSearchInput={onEnterSearchInput}/>
-      </>
+      <><Header isButtonRequired={true} />
+        <HomeTabs currentTabId={currentTabId} clickTabItem={clickTabItem} />
+        <SearchInput searchInput={searchInput} onClickSearchBtn={onClickSearchBtn} onChangeSearchInput={onChangeSearchInput} onEnterSearchInput={onEnterSearchInput} />
+        <ResourceList data={itemList} /></>
     )
 }
 

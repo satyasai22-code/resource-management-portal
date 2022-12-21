@@ -1,0 +1,46 @@
+.resource-items-container {
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 8%;
+  min-height: 50vh;
+  margin-right: 4%;
+}
+@media screen and (min-width: 576px) {
+  .search-input-container {
+    margin-right: 0px;
+  }
+}
+.pagination {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom:24px;
+    font-size: 18px;
+    gap: 4px;
+  }
+  
+  .pagination .page-num {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 5px;
+    font-weight: 400;
+  }
+  .pagination .active {
+    background-color: #2dca73;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+  } 
+  .pagination .page-num:hover {
+    background-color: #675be6;
+    color: #ffffff;
+    font-family:  'Space Grotesk', sans-serif;
+  }
+  
+  

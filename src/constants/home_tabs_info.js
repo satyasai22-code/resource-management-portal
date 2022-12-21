@@ -18,3 +18,5 @@ export const fetchStatus = {
     failure: "FAILURE",
     inProgress: "IN_PROGRESS",
   };
+
+  export const ITEMS_PER_PAGE = 6

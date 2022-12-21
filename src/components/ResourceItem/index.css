@@ -1,0 +1,76 @@
+.resource-item-card {
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  border: 1px solid #d7dfe9;
+  border-radius: 4px;
+  padding: 25px;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+@media screen and (min-width: 576px) {
+  .resource-item-card {
+    width: 47%;
+    margin-bottom: 3%;
+    margin-right: 3%;
+  }
+}
+.resource-item-card:hover {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 992px) {
+  .resource-item-card {
+    width: 30%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+  }
+}
+.resource-card-header {
+  display: flex;
+  flex-direction: row;
+}
+.card-icon {
+  border: 2px solid #d7dfe9;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+}
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 5%;
+}
+.card-title {
+  font-size: 16px;
+  font-family: 'Space Grotesk', sans-serif;;
+  font-weight: 500;
+  color: #171f46;
+  line-height: 24px;
+}
+.card-category {
+  font-size: 14px;
+  font-family: 'Space Grotesk', sans-serif;;
+  font-weight: 500;
+  color: #7e858e;
+  line-height: 24px;
+}
+.card-link {
+  font-size: 14px;
+  font-family: 'Space Grotesk', sans-serif;;
+  font-weight: 400;
+  color: #0b69ff;
+  line-height: 36px;
+  text-decoration: none;
+}
+.card-description {
+  font-size: 14px;
+  font-family: 'Space Grotesk', sans-serif;;
+  font-weight: 400;
+  color: #7e858e;
+  line-height: 24px;
+  text-decoration: none;
+}
