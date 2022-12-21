@@ -63,7 +63,8 @@ const Home = () => {
     setCurrentTabId(tabId)
     fetchResources()
   }
-    return (
+  
+  return (
       <><Header isButtonRequired={true} />
         <HomeTabs currentTabId={currentTabId} clickTabItem={clickTabItem} />
         <SearchInput searchInput={searchInput} onClickSearchBtn={onClickSearchBtn} onChangeSearchInput={onChangeSearchInput} onEnterSearchInput={onEnterSearchInput} />

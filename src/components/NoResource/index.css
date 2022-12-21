@@ -1,0 +1,39 @@
+
+.no-resource-view-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+  .no-resource-view-image {
+    width: 250px;
+    height: 170px;
+  }
+  @media screen and (min-width: 768px) {
+    .no-resource-view-image {
+      height: 330px;
+      width: 470px;
+    }
+  }
+  
+  .no-resource-view-description {
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #475569;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .no-resource-view-description {
+      font-family: 'Space Grotesk', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #334155;
+    }
+  }
