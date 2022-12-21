@@ -1,4 +1,4 @@
- import  {NAME_REGEX, URL_REGEX} from "./regex"
+ import  {NAME_REGEX, URL_REGEX, MOBILE_NUMBER_REGEX, PASSWORD_REGEX} from "./regex"
  export const addItemFormInfo = {
     INPUTS: [
         {
@@ -63,4 +63,28 @@
           errorMessage: "Description shouldn't be Empty!",
           label: "DESCRIPTION",
       }
+}
+
+export const loginFormInfo = {
+   INPUTS :[ 
+    {
+      id: 7,
+      name: "mobileNumber",
+      type: "text",
+      placeholder: "Enter Mobile Number",
+      errorMessage: "Invalid Mobile Number",
+      label: "Mobile Number*",
+      pattern: MOBILE_NUMBER_REGEX,
+      required: true,
+   },
+    {
+    id: 8,
+    name: "password",
+    type: "password",
+    placeholder: "Enter password",
+    errorMessage: "password should be atleast 8 characters long",
+    label: "Password*",
+    pattern: PASSWORD_REGEX,
+    required: true,
+ }]
 }

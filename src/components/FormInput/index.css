@@ -4,12 +4,18 @@
     margin-bottom: 20px;
   }
   .input-label {
-    color: #7e858e;
-    font-weight: 600;
+    color: #5a7184;
+    font-weight: bold;;
     font-size: 12px;
     font-family: 'Space Grotesk', sans-serif;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
+  @media screen and (min-width: 576px) {
+    .login-form-container {
+      flex-direction: row;
+    }
+}
+
   .input-field {
     padding: 8px 16px;
     outline: none;
