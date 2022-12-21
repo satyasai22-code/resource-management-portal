@@ -82,7 +82,7 @@ export const loginFormInfo = {
     name: "password",
     type: "password",
     placeholder: "Enter password",
-    errorMessage: "password should be atleast 8 characters long",
+    errorMessage: "Min 8 characters required",
     label: "Password*",
     pattern: PASSWORD_REGEX,
     required: true,
