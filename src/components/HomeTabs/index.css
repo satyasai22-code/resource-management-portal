@@ -1,0 +1,11 @@
+.tabs-container {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 30px;
+  }

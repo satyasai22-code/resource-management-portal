@@ -28,7 +28,7 @@
           type: "text",
           placeholder: "Enter URL",
           errorMessage: "It should be a valid URL!",
-          label: "ICON",
+          label: "ICON URL",
           pattern:
             URL_REGEX,
           required: true,

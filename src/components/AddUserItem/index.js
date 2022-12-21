@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import React, { Component , useState} from "react";
+import React, { useState} from "react";
 import Header from "../Header";
 import { FaAngleLeft } from "react-icons/fa";
 import addItem from "../../images/add_item.png"
 import { ToastContainer, } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { RESOURCE_POST_URL } from "../../constants/api_url";
 import "./index.css";
 import FormInput from "../FormInput";
 import FormTextArea from "../FormTextArea";
-import { addItemFormInfo } from "../../constants/formInfo";
+import { addItemFormInfo } from "../../constants/form_info";
 
 import { customToast} from "../Toast";
 
@@ -39,18 +39,21 @@ const AddResourceItem = () => {
     ) {
       customToast({type:`error`, message:`Enter Valid Form Data `})
     } else {
-      const addResourceApiURL =
-        " https://media-content.ccbp.in/website/react-assignment/add_resource.json";
       const options = {
-        method: "GET",
+        method: "GET", //Should be a POST method
+        // body: {},
       };
-
-      const response = await fetch(addResourceApiURL, options);
-      if (response.ok) {
-        customToast({type:`success`, message:`Item Added Successfully`})
-      } else {
-        customToast({type:`error`, message:`Item Add failed `})
-      }
+      await fetch( RESOURCE_POST_URL, options)
+      .then((response) => {
+        if (response.ok) {
+          customToast({type:`success`, message:`Item Added Successfully`})
+        } else {
+          customToast({type:`error`, message:`Item Add failed `})
+        }
+      })
+      .catch(() => {
+          customToast({type:`error`, message:`Item Add failed `})
+      })
     }
   };
 

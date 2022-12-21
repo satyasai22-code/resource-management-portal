@@ -1,0 +1,2 @@
+export const RESOURCE_GET_URL = `https://media-content.ccbp.in/website/react-assignment/resources.json`
+export const RESOURCE_POST_URL = `https://media-content.ccbp.in/website/react-assignment/add_resource.json`

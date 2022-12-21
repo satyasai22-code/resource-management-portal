@@ -1,7 +1,7 @@
 import { toast } from "react-toastify"
-// import { toast } from "react-toastify";
+
 export const customToast = (props) => {
-    const { message, type, ...inputProps} = props
+    const { message, type} = props
     const style = {
         position: "bottom-center",
         autoClose: 5000,
@@ -17,5 +17,7 @@ export const customToast = (props) => {
             return toast.error(message, style);
         case "success":
             return toast.success(message, style)
+        default:
+            return
     }
 }
