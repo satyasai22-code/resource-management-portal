@@ -3,6 +3,7 @@ import Header from '../Header'
 import { homeTabsInfo, fetchStatus } from '../../constants/home_tabs_info'
 import { RESOURCE_GET_URL } from '../../constants/api_url'
 import HomeTabs from '../HomeTabs'
+import SearchInput from '../SearchInput'
 
 const {initial, success, failure, inProgress} = fetchStatus
 
@@ -49,7 +50,9 @@ const Home = () => {
       getResources();
     }
   };
-
+  const onClickSearchBtn = (event) => {
+    getResources();
+  }
   const clickTabItem = (tabId) =>{
     setCurrentTabId(tabId)
     getResources()
@@ -58,6 +61,7 @@ const Home = () => {
       <>
       <Header isButtonRequired={true} />
       <HomeTabs currentTabId={currentTabId} clickTabItem={clickTabItem}/>
+      <SearchInput searchInput={searchInput} onClickSearchBtn={onClickSearchBtn} onChangeSearchInput={onChangeSearchInput} onEnterSearchInput={onEnterSearchInput}/>
       </>
     )
 }

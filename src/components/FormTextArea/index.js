@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FormErrorMessage from "../FormErrorMessage";
-import Label from "../FormLabel/FormLabel"
+import Label from "../FormLabel"
 import "./index.css";
 
 const FormTextArea = (props) => {

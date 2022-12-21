@@ -15,7 +15,7 @@ const HomeTabs = (props) => {
         key={tabDetails.tabId}
         tabInfo={tabDetails}
         onClickTabItem={onClickTabItem}
-        isCurrentTab={ currentTabId == tabDetails.tabId}
+        isCurrentTab={ currentTabId === tabDetails.tabId}
       />
     ))}
   </ul>

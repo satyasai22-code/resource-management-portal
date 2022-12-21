@@ -1,5 +1,4 @@
 import React from 'react'
-import Label from '../FormLabel/FormLabel'
 
 const DropDown = (props) => {
     const { className, label, tagList} = props

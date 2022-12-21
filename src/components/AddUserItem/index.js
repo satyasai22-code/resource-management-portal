@@ -11,7 +11,7 @@ import FormInput from "../FormInput";
 import FormTextArea from "../FormTextArea";
 import { addItemFormInfo } from "../../constants/form_info";
 
-import { customToast} from "../Toast";
+import { customToast} from "../../utils/Toast";
 
 const inputs = addItemFormInfo.INPUTS
 const textArea = addItemFormInfo.TEXTAREA

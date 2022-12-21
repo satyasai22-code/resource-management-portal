@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DropDown from "../DropDown";
 import FormErrorMessage from "../FormErrorMessage";
-import Label from "../FormLabel/FormLabel";
+import Label from "../FormLabel";
 import "./index.css";
 
 const FormInput = (props) => {
