@@ -16,7 +16,7 @@ const Home = () => {
   const [fetchDataStatus, setFetchDataStatus] = useState(initial)
   const [itemList, setItemList] = useState([])
 
-  const getResources = async () => {
+  const fetchResources = async () => {
     setFetchDataStatus(inProgress)
     const options = {
       method: "GET",
@@ -42,15 +42,17 @@ const Home = () => {
     })
     .catch(() => {})
   };
+
   useEffect(() => {
-    getResources()
+    fetchResources()
   }, []);
 
   const onEnterSearchInput = (event) => {
     if (event.key === "Enter") {
-      getResources();
+      fetchResources();
     }
   };
+  
   const onClickSearchBtn = (event) => {
     setSearchInput(event.target.value );
   }
@@ -59,7 +61,7 @@ const Home = () => {
   }
   const clickTabItem = (tabId) =>{
     setCurrentTabId(tabId)
-    getResources()
+    fetchResources()
   }
     return (
       <><Header isButtonRequired={true} />
