@@ -6,6 +6,7 @@ import HomeTabs from '../HomeTabs'
 import SearchInput from '../SearchInput'
 import ResourceList from '../ResourceList'
 import './index.css'
+import ResourceSection from '../ResourceSection'
 
 const {initial, success, failure, inProgress} = fetchStatus
 
@@ -56,18 +57,29 @@ const Home = () => {
   const onClickSearchBtn = (event) => {
     setSearchInput(event.target.value );
   }
+
   const onChangeSearchInput = (event) => {
     setSearchInput(event.target.value );
   }
+
   const clickTabItem = (tabId) =>{
     setCurrentTabId(tabId)
     fetchResources()
   }
+
+  const onClickTryAgain = () => {
+    fetchResources()
+  }
+
   return (
       <><Header isButtonRequired={true} />
         <HomeTabs currentTabId={currentTabId} clickTabItem={clickTabItem} />
         <SearchInput searchInput={searchInput} onClickSearchBtn={onClickSearchBtn} onChangeSearchInput={onChangeSearchInput} onEnterSearchInput={onEnterSearchInput} />
-        <ResourceList data={itemList} /></>
+        <ResourceSection resourcesList={itemList} searchInput={searchInput}
+          currentTabId={currentTabId} fetchDataStatus={fetchDataStatus}
+          onClickTryAgain={onClickTryAgain}
+        />
+        </>
     )
 }
 

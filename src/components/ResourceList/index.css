@@ -7,11 +7,7 @@
   min-height: 50vh;
   margin-right: 4%;
 }
-@media screen and (min-width: 576px) {
-  .search-input-container {
-    margin-right: 0px;
-  }
-}
+
 .pagination {
     list-style-type: none;
     display: flex;

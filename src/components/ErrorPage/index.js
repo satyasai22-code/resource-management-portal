@@ -1,13 +1,15 @@
 import React from 'react'
+import './index.css'
+import errorPage from '../../images/something_went_wrong.png'
 
 const ErrorPage = (props) => {
     const { onClickTryAgain } = props
-    onClick = () => onClickTryAgain()
+    const onClick = () => onClickTryAgain()
   return (
     <div className="home-failure">
     <img
       className="home-failure-image"
-      src="https://res.cloudinary.com/dinhpbueh/image/upload/v1662554492/SomethingWentWrong_qek4y3.png"
+      src={errorPage}
       alt="failure view"
     />
     <p className="home-failure-description">

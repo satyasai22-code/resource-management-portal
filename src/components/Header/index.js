@@ -19,7 +19,7 @@ const Header = (props) => {
           </Link>
           <div className="button-logo-container">
             { isButtonRequired &&              
-            <Link to="/resource/add">
+            <Link to="/add-resource">
                 <button type="button" className="add-item-btn">
                   ADD ITEM
                 </button>

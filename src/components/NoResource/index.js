@@ -1,5 +1,6 @@
 import React from 'react'
 import resourceNotFound from '../../images/resource_not_found.png'
+import './index.css'
 
 const NoResource = (props) => {
   const {message} = props

@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import AddResourceItem from './components/AddUserItem';
+import PageNotFound from './components/PageNotFound';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/resource/add" element={<AddResourceItem/>}/>
+          <Route exact path="/add-resource" element={<AddResourceItem/>}/>
+          <Route exact path="*" element={<PageNotFound/>}/>
         </Routes>
     </div>
   </Router>

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 60vh;
   }
   .home-failure-image {
     width: 250px;
@@ -23,7 +23,7 @@
     line-height: 16px;
     text-align: center;
     color: #475569;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
