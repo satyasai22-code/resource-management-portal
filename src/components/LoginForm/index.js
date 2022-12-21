@@ -35,7 +35,7 @@ const LoginForm = () => {
         ) {
           customToast({type:`error`, message:`Enter Valid Form Data `})
         } else {
-          navigate("/")
+          navigate("/resource-management-portal")
         }
     }
     const onChange = (event) => {

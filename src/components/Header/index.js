@@ -19,12 +19,12 @@ const Header = (props) => {
           </Link>
           <div className="button-logo-container">
             { isButtonRequired &&              
-            <Link to="/add-resource">
+            <Link to="/resource-management-portal/add-resource">
                 <button type="button" className="add-item-btn">
                   ADD ITEM
                 </button>
             </Link>}
-            <Link to="/login">
+            <Link to="/resource-management-portal/login">
                 <img
                     className="profile-logo"
                     src={profile}

@@ -80,7 +80,7 @@ const AddResourceItem = () => {
           <div className="item-details-container">
             <div className="resources-button-container">
               <Link
-                to="/"
+                to="/resource-management-portal"
                 className="back-to_users-link"
               >
                 <button className="back-arrow-btn" type="button">
