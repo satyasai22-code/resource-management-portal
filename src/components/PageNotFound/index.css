@@ -20,7 +20,7 @@
     }
   }
   .not-found-heading {
-    font-family: "Roboto";
+    font-family: 'Space Grotesk', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -40,7 +40,7 @@
   }
   
   .not-found-description {
-    font-family: "Inter";
+    font-family: 'Space Grotesk', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -55,7 +55,7 @@
     }
   }
   .go-back-to-home-btn {
-    font-family: "Inter";
+    font-family:'Space Grotesk', sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;

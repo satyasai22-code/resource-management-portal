@@ -63,7 +63,6 @@ const Home = () => {
     setCurrentTabId(tabId)
     fetchResources()
   }
-  
   return (
       <><Header isButtonRequired={true} />
         <HomeTabs currentTabId={currentTabId} clickTabItem={clickTabItem} />
