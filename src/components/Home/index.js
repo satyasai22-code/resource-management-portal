@@ -53,10 +53,6 @@ const Home = () => {
       fetchResources();
     }
   };
-  
-  const onClickSearchBtn = (event) => {
-    setSearchInput(event.target.value );
-  }
 
   const onChangeSearchInput = (event) => {
     setSearchInput(event.target.value );
@@ -74,7 +70,7 @@ const Home = () => {
   return (
       <><Header isButtonRequired={true} />
         <HomeTabs currentTabId={currentTabId} clickTabItem={clickTabItem} />
-        <SearchInput searchInput={searchInput} onClickSearchBtn={onClickSearchBtn} onChangeSearchInput={onChangeSearchInput} onEnterSearchInput={onEnterSearchInput} />
+        <SearchInput searchInput={searchInput} onChangeSearchInput={onChangeSearchInput} onEnterSearchInput={onEnterSearchInput} />
         <ResourceSection resourcesList={itemList} searchInput={searchInput}
           currentTabId={currentTabId} fetchDataStatus={fetchDataStatus}
           onClickTryAgain={onClickTryAgain}

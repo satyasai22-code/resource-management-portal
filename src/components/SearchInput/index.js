@@ -3,8 +3,8 @@ import './index.css'
 import {FaSearch} from 'react-icons/fa'
 
 const SearchInput = (props) => {
-  const {onClickSearchBtn,searchInput, onChangeSearchInput, onEnterSearchInput} = props
-  const onClickSearch = (event) => onClickSearchBtn(event)
+  const {searchInput, onChangeSearchInput, onEnterSearchInput} = props
+
   const onChangeSearch = (event) => onChangeSearchInput(event)
   const onEnterSearch = (event) => onEnterSearchInput(event)
   return (
@@ -12,7 +12,6 @@ const SearchInput = (props) => {
     <button
       className="search-button"
       type="button"
-      onClick={onClickSearch}
     >
     <FaSearch className="search-icon" />
     </button>
