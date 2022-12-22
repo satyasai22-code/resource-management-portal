@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/resource-management-portal/static/css/main.c4935229.css",
+    "main.css": "/resource-management-portal/static/css/main.00a266f7.css",
     "main.js": "/resource-management-portal/static/js/main.a10aed4a.js",
     "static/js/787.5043e31f.chunk.js": "/resource-management-portal/static/js/787.5043e31f.chunk.js",
     "static/media/add_item.png": "/resource-management-portal/static/media/add_item.b80c8749c37137f77e47.png",
@@ -9,12 +9,12 @@
     "static/media/not_found.png": "/resource-management-portal/static/media/not_found.8bd6578794189af2a140.png",
     "static/media/something_went_wrong.png": "/resource-management-portal/static/media/something_went_wrong.d630a36165124abbbd28.png",
     "index.html": "/resource-management-portal/index.html",
-    "main.c4935229.css.map": "/resource-management-portal/static/css/main.c4935229.css.map",
+    "main.00a266f7.css.map": "/resource-management-portal/static/css/main.00a266f7.css.map",
     "main.a10aed4a.js.map": "/resource-management-portal/static/js/main.a10aed4a.js.map",
     "787.5043e31f.chunk.js.map": "/resource-management-portal/static/js/787.5043e31f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4935229.css",
+    "static/css/main.00a266f7.css",
     "static/js/main.a10aed4a.js"
   ]
 }
